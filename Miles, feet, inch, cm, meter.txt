@@ -1,0 +1,16 @@
+# Python program to convert and print a distance in miles, feet, inch, cm, meter
+
+# Take user input for distance in miles
+distance_miles = float(input("Enter distance in miles: "))
+
+# Convert miles to feet, inches, centimeters, and meters
+distance_feet = distance_miles * 5280
+distance_inches = distance_miles * 63360
+distance_cm = distance_miles * 160934.4
+distance_meter = distance_miles * 1609.344
+
+# Print the converted distances
+print(f"{distance_miles} miles = {distance_feet} feet")
+print(f"{distance_miles} miles = {distance_inches} inches")
+print(f"{distance_miles} miles = {distance_cm} centimeters")
+print(f"{distance_miles} miles = {distance_meter} meters")

@@ -1,0 +1,23 @@
+# Open a file in write mode
+f = open("file.txt", "w")
+
+# Write some text to the file
+f.write("Hello, world!\n")
+f.write("This is a sample file.\n")
+f.write("It contains some text.\n")
+
+# Close the file
+f.close()
+
+# Open the file in read mode
+f = open("file.txt", "r")
+
+# Read the contents of the file
+contents = f.read()
+
+# Print the contents of the file
+print("File contents:")
+print(contents)
+
+# Close the file
+f.close()

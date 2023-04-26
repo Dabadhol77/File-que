@@ -1,0 +1,59 @@
+import numpy as np
+
+# Create a 1D array
+a = np.array([1, 2, 3, 4, 5])
+
+# Print the array
+print("1D Array:")
+print(a)
+
+# Access elements of the array using indexing
+print("Element at index 2:", a[2])
+
+# Change the value of an element using indexing
+a[3] = 10
+print("Modified array:")
+print(a)
+
+# Create a 2D array
+b = np.array([[1, 2, 3], [4, 5, 6]])
+
+# Print the array
+print("2D Array:")
+print(b)
+
+# Access elements of the array using indexing
+print("Element at row 0, column 2:", b[0, 2])
+
+# Change the value of an element using indexing
+b[1, 1] = 10
+print("Modified array:")
+print(b)
+
+# Create a 3D array
+c = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])
+
+# Print the array
+print("3D Array:")
+print(c)
+
+# Access elements of the array using indexing
+print("Element at row 0, column 1, depth 1:", c[0, 1, 1])
+
+# Change the value of an element using indexing
+c[1, 0, 1] = 10
+print("Modified array:")
+print(c)
+
+# Use the shape property to get the dimensions of the array
+print("Dimensions of array a:", a.shape)
+print("Dimensions of array b:", b.shape)
+print("Dimensions of array c:", c.shape)
+
+# Use the flatten() function to convert a multidimensional array to a 1D array
+print("Flattened array b:")
+print(b.flatten())
+
+# Use the transpose() function to transpose a 2D array
+print("Transposed array b:")
+print(b.transpose())

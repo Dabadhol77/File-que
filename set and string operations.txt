@@ -1,0 +1,33 @@
+# Python program to understand different set and dictionary, string operations using built-in functions
+
+# Create a set and a dictionary
+num_set = {1, 2, 3, 4, 5}
+num_dict = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five"}
+
+# Use the len() function to get the length of the set and dictionary
+print(f"Length of set: {len(num_set)}")
+print(f"Length of dictionary: {len(num_dict)}")
+
+# Use the set() function to convert a list to a set, and the list() function to convert a set to a list
+num_list = [1, 2, 3, 4, 5]
+set_from_list = set(num_list)
+list_from_set = list(num_set)
+print(f"Set from list: {set_from_list}")
+print(f"List from set: {list_from_set}")
+
+# Use the keys() function to get a list of keys in the dictionary, and the values() function to get a list of values
+print(f"Keys in dictionary: {num_dict.keys()}")
+print(f"Values in dictionary: {num_dict.values()}")
+
+# Use the split() function to split a string into a list, and the join() function to join a list into a string
+text_string = "Python is a popular programming language"
+text_list = text_string.split()
+joined_string = "-".join(text_list)
+print(f"Split string: {text_list}")
+print(f"Joined string: {joined_string}")
+
+# Use the upper() function to convert a string to upper case, and the lower() function to convert a string to lower case
+upper_text = text_string.upper()
+lower_text = text_string.lower()
+print(f"Upper case string: {upper_text}")
+print(f"Lower case string: {lower_text}")

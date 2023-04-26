@@ -1,0 +1,19 @@
+# Python program to convert number from binary, octal, hexadecimal, into decimal number
+
+# Take user input for the number and its base
+num = input("Enter a number: ")
+base = int(input("Enter the base (2 for binary, 8 for octal, 16 for hexadecimal): "))
+
+# Convert the number to decimal using the int() function with the appropriate base argument
+if base == 2:
+    decimal = int(num, 2)
+elif base == 8:
+    decimal = int(num, 8)
+elif base == 16:
+    decimal = int(num, 16)
+else:
+    print("Invalid base")
+    exit()
+
+# Print the decimal equivalent of the number
+print(f"{num} in base {base} = {decimal} in base 10 (decimal)")

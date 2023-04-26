@@ -1,0 +1,33 @@
+import pandas as pd
+
+# Load the dataset
+df = pd.read_csv('hotel_bookings.csv')
+
+# Display the first 10 and last 10 rows of the dataset
+print("First 10 rows:")
+print(df.head(10))
+print("Last 10 rows:")
+print(df.tail(10))
+
+# Extract the arrival_date_month column as a separate DataFrame
+arrival_month_df = df['arrival_date_month'].to_frame()
+print("Arrival month DataFrame:")
+print(arrival_month_df)
+
+# Display the result of the describe command
+print("Describe command result:")
+print(df.describe())
+
+# Filter the dataset to include only non-show bookings
+nonshow_bookings = df[df['reservation_status'] == 'No-Show']
+print("Non-show bookings:")
+print(nonshow_bookings)
+
+# Count the number of bookings that were not cancelled in 2017
+not_cancelled_2017 = df[(df['arrival_date_year'] == 2017) & (df['reservation_status'] != 'Canceled')]
+print("Number of bookings not cancelled in 2017:", len(not_cancelled_2017))
+
+# Replace missing values in the agent column with the median value
+agent_median = df['agent'].median()
+df['agent'].fillna(agent_median, inplace=True)
+print("Missing values in agent column replaced with median value.")
